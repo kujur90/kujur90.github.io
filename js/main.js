@@ -1,37 +1,28 @@
-// Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
-
-navToggle.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('is-open');
-  navToggle.setAttribute('aria-expanded', isOpen);
-});
-
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open);
   });
-});
-
-// Scroll-reveal for project records
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const records = document.querySelectorAll('.reveal');
-
-if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-  records.forEach(el => el.classList.add('is-visible'));
-} else {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  records.forEach(el => observer.observe(el));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
 }
+
+const revealEls = document.querySelectorAll('.service-card, .portfolio-card, .about-grid, .timeline li');
+revealEls.forEach(el => el.classList.add('reveal'));
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealEls.forEach(el => io.observe(el));
