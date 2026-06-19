@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin — Web Developer & MIS Coordinator</title>
+<meta name="description" content="Portfolio of Justin, Web Developer & MIS Coordinator at SeSTA, building software for the development sector across Northeast India.">
+
+<!-- EDIT: replace with your real domain/social preview image before deploying -->
+<meta property="og:title" content="Justin — Web Developer & MIS Coordinator">
+<meta property="og:description" content="Full-stack PHP/Laravel developer building MIS and assessment platforms for the development sector in Northeast India.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">JK<span class="logo-dot">.</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="https://github.com/kujur90" class="header-gh" target="_blank" rel="noopener" aria-label="GitHub profile">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">web developer — mis coordinator</p>
+      <h1>Justin<br><span class="muted">[Last Name]</span></h1>
+      <p class="hero-lede">
+        I build the software development organisations across Northeast India actually run on —
+        MIS platforms, assessment tools, and the database structures underneath them.
+        Based in Assam, working full-stack in PHP, Laravel, and MySQL.
+      </p>
+
+      <div class="status-line" role="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="mono">currently building the Procurement Request module for sesta.in's MIS</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="section-label mono">01 — about</p>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Web Developer and MIS Coordinator at <strong>SeSTA</strong> (Seven Sisters Development
+          Assistance), where I design and maintain the systems that NGOs and field teams across
+          Northeast India use to track programmes, report on outcomes, and manage grant readiness.
+          That spans everything from Laravel applications to raw SQL reporting queries run directly
+          against production data.
+        </p>
+        <p class="about-text">
+          Before SeSTA, I worked as a System Administrator at Don Bosco College, which is where most
+          of my Linux and infrastructure habits come from. I hold an MCA from Dibrugarh University.
+          I'd rather ship a correct, direct solution than iterate endlessly — that applies to code
+          and to the systems I design.
+        </p>
+        <dl class="about-facts mono">
+          <div><dt>location</dt><dd>Assam, India</dd></div>
+          <div><dt>education</dt><dd>MCA, Dibrugarh University</dd></div>
+          <div><dt>sector</dt><dd>NGO / development</dd></div>
+          <div><dt>github</dt><dd><a href="https://github.com/kujur90" target="_blank" rel="noopener">kujur90</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <p class="section-label mono">02 — selected work</p>
+      <h2 class="section-title">Systems in production</h2>
+
+      <div class="records">
+
+        <article class="record reveal">
+          <div class="record-head">
+            <span class="record-id">FFRH</span>
+            <span class="record-status live"><span class="dot"></span>live</span>
+          </div>
+          <h3>NGO Grant-Readiness Assessment Platform</h3>
+          <p class="record-desc">
+            A self-assessment and grant-readiness platform for NGOs, with role-based access
+            for Admins, Organisations, and Donors. Includes dynamic certificate generation,
+            detailed PDF reports with module-level recommendations, and conditional
+            follow-up questions in the assessment flow.
+          </p>
+          <dl class="record-fields mono">
+            <div><dt>stack</dt><dd>Laravel · MySQL · Livewire · Bootstrap 5</dd></div>
+            <div><dt>role</dt><dd>Full-stack development & deployment</dd></div>
+            <div><dt>url</dt><dd><a href="https://test.sesta.org" target="_blank" rel="noopener">test.sesta.org</a></dd></div>
+          </dl>
+        </article>
+
+        <article class="record reveal">
+          <div class="record-head">
+            <span class="record-id">MIS</span>
+            <span class="record-status active"><span class="dot"></span>in development</span>
+          </div>
+          <h3>sesta.in — Programme Management Information System</h3>
+          <p class="record-desc">
+            A management information system tracking programme themes, activities, and
+            tasks across field operations in Northeast India. Built on a hierarchical
+            theme → activity → task data structure, with SQL reporting for location-level
+            (MK) exports — training, adoption, and production/income data.
+          </p>
+          <dl class="record-fields mono">
+            <div><dt>stack</dt><dd>PHP · MySQL · SQL reporting</dd></div>
+            <div><dt>role</dt><dd>MIS Coordinator & developer</dd></div>
+            <div><dt>url</dt><dd>sesta.in</dd></div>
+          </dl>
+        </article>
+
+        <article class="record reveal">
+          <div class="record-head">
+            <span class="record-id">NoDe</span>
+            <span class="record-status live"><span class="dot"></span>live</span>
+          </div>
+          <h3>NoDe Programme — CSO Showcase Site</h3>
+          <p class="record-desc">
+            Programme microsite featuring a cohort showcase of partner civil society
+            organisations, plus an interactive news & events section for ongoing
+            programme updates.
+          </p>
+          <dl class="record-fields mono">
+            <div><dt>stack</dt><dd>WordPress</dd></div>
+            <div><dt>role</dt><dd>Web development</dd></div>
+            <div><dt>url</dt><dd><a href="https://node.sesta.org" target="_blank" rel="noopener">node.sesta.org</a></dd></div>
+          </dl>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <p class="section-label mono">03 — stack</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="mono">backend</h3>
+          <ul><li>PHP</li><li>Laravel</li><li>MySQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">frontend</h3>
+          <ul><li>JavaScript</li><li>CSS</li><li>Bootstrap</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">tools</h3>
+          <ul><li>Git</li><li>Linux / Ubuntu</li><li>SSH</li><li>phpMyAdmin</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <p class="section-label mono">04 — experience</p>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-role">
+            <h3>Web Developer & MIS Coordinator</h3>
+            <span class="mono timeline-date">SeSTA — present</span>
+          </div>
+          <p>Full-stack development and database/MIS coordination for Seven Sisters Development Assistance, Assam.</p>
+        </li>
+        <li>
+          <div class="timeline-role">
+            <h3>System Administrator</h3>
+            <span class="mono timeline-date">Don Bosco College</span>
+          </div>
+          <p>Infrastructure and systems administration.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="wrap">
+      <p class="section-label mono">05 — contact</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-lede">Open to development work in the NGO / civic-tech space, or just a conversation about MIS design.</p>
+      <div class="contact-links">
+        <!-- EDIT: replace with your real email -->
+        <a href="mailto:your.email@example.com" class="btn btn-primary">your.email@example.com</a>
+        <a href="https://github.com/kujur90" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="mono">© <span id="year"></span> Justin. Built with HTML, CSS & JS.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
